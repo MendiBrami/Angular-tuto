@@ -11,5 +11,5 @@ export class TsadikimComponent implements OnInit {
 
   ngOnInit() {
   }
-
+tsadik = "בעל שם טוב"
 }
