@@ -1,3 +1,10 @@
 <h2>{{tsadik.name | uppercase}}</h2>
+<img src = {{tsadik.picturePath}}><img>
 <div><span>מספר זהות: </span>{{tsadik.id}}</div>
-<div><span>ספר: </span>{{tsadik.book}}</div>
+<div>
+    <label>
+      <input [(ngModel)]="tsadik.book" placeholder="ספר">
+      :ספר
+    </label>
+  </div>
+  

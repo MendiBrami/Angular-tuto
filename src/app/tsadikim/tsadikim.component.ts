@@ -10,7 +10,8 @@ export class TsadikimComponent implements OnInit {
   tsadik: Tsadik = {
     id: 1,
     name: 'בעל שם טוב',
-    book: 'כתר שם טוב'
+    book: 'כתר שם טוב',
+    picturePath: 'https://www.yeshiva.org.il/wiki/images/5/57/Besht.png'
 
   }
 
