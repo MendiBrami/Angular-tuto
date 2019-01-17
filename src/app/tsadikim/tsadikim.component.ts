@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Tsadik } from '../tsadik/tsadik';
+import { TSADIKIM } from '../mock-tsadikim';
+
 @Component({
   selector: 'app-tsadikim',
   templateUrl: './tsadikim.component.html',
@@ -7,17 +9,10 @@ import { Tsadik } from '../tsadik/tsadik';
 })
 export class TsadikimComponent implements OnInit {
 
-  tsadik: Tsadik = {
-    id: 1,
-    name: 'בעל שם טוב',
-    book: 'כתר שם טוב',
-    picturePath: 'https://www.yeshiva.org.il/wiki/images/5/57/Besht.png'
-
-  }
+  tsadikim = TSADIKIM;
 
   constructor() { }
 
   ngOnInit() {
   }
-
 }
