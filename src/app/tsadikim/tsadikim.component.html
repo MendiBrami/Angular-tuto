@@ -1,17 +1,24 @@
-<h2>{{tsadik.name | uppercase}}</h2>
-<img src = {{tsadik.picturePath}}><img>
-<div><span>מספר זהות: </span>{{tsadik.id}}</div>
-<div>
-    <label>
-      <input [(ngModel)]="tsadik.book" placeholder="ספר">
-      :ספר
+
+<div class="tsadik-header">
+  <h2>{{currentTsadik.name | uppercase}}</h2>
+  <img style="border-radius:20px" class="image" width="100" height="150" src={{currentTsadik.picturePath}}><img>
+  <div>
+    <label> 
+    ספר:  {{currentTsadik.book}}
     </label>
   </div>
+  <br/>
+</div>
 
-<h2>צדיקים</h2>
-<ul class="tsadikim">
-  <li *ngFor="let tsadik of tsadikim">
-    <span class="badge">{{tsadik.id}}</span>
-  </li>
-</ul>
-  
+<h2 style="margin-top:200px">צדיקים</h2>
+<mat-list>
+  <div *ngFor="let tsadik of tsadikim">
+    <button mat-list-item (click)="click(tsadik.id)">
+      <img matListAvatar src="{{tsadik.picturePath}}">
+      <h3 matLine>{{tsadik.name}} </h3>
+      <p matLine>
+        <span> ספר: {{tsadik.book}} </span>
+      </p>
+    </button>
+  </div>
+</mat-list>

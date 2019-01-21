@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TsadikimComponent } from './tsadikim/tsadikim.component';
+import { MatListModule } from '@angular/material/list';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,8 +15,10 @@ import { TsadikimComponent } from './tsadikim/tsadikim.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatListModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

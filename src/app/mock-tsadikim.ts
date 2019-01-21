@@ -9,4 +9,5 @@ export const TSADIKIM: Tsadik[] = [
     {id: 15, name: 'המהר"ש', book: 'תורת שמואל', picturePath: 'http://chabadpedia.co.il/images/2/2f/%D7%9E%D7%99%D7%95%D7%97%D7%A1_%D7%9C%D7%9E%D7%94%D7%A8%22%D7%A9.jpg'} ,
     {id: 16, name: 'רש"ב', book: 'קונטרס התפילה', picturePath: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Image-RebbeRashab.jpg/440px-Image-RebbeRashab.jpg'} ,
     {id: 17, name: 'ריי"ץ', book: 'ספר הזכרונות', picturePath: 'https://w3.chabad.org/media/images/3610.jpg'} ,
-    {id: 18, name: 'הרבי', book: 'ספר המאמרים', picturePath: 'http://www.breslev-midot.com/images/the_rabbi.jpg'}]
+    {id: 18, name: 'הרבי', book: 'ספר המאמרים', picturePath: 'http://www.breslev-midot.com/images/the_rabbi.jpg'}
+]

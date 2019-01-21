@@ -10,9 +10,15 @@ import { TSADIKIM } from '../mock-tsadikim';
 export class TsadikimComponent implements OnInit {
 
   tsadikim = TSADIKIM;
-
+  currentTsadik:Tsadik;
   constructor() { }
 
   ngOnInit() {
+    this.currentTsadik = this.tsadikim[0];
   }
+  click(id:number) {
+    this.currentTsadik = this.tsadikim.find(i=> i.id == id)
+  }
+
+  
 }
