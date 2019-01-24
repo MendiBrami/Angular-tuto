@@ -3,12 +3,12 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color:slategray;
+    background-color:dimgrey;
     opacity: 1;
     z-index: 1;
  }
 
   .selected {
-    background-color: steelblue !important;
+    background-color: skyblue !important;
     color: dodgerblue;
   }
