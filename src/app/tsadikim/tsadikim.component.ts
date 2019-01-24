@@ -16,9 +16,8 @@ export class TsadikimComponent implements OnInit {
   ngOnInit() {
     this.currentTsadik = this.tsadikim[0];
   }
-  click(id:number) {
-    this.currentTsadik = this.tsadikim.find(i=> i.id == id)
-  }
-
   
+  click(tsadik:Tsadik) {
+    this.currentTsadik = tsadik;
+  }
 }

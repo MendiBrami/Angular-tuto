@@ -1,19 +1,12 @@
 
 <div class="tsadik-header">
-  <h2>{{currentTsadik.name | uppercase}}</h2>
-  <img style="border-radius:20px" class="image" width="100" height="150" src={{currentTsadik.picturePath}}><img>
-  <div>
-    <label> 
-    ספר:  {{currentTsadik.book}}
-    </label>
-  </div>
-  <br/>
+  <app-tsadik-detail [tsadik] = 'currentTsadik'></app-tsadik-detail>
 </div>
 
 <h2 style="margin-top:200px">צדיקים</h2>
 <mat-list>
   <div *ngFor="let tsadik of tsadikim">
-    <button mat-list-item (click)="click(tsadik.id)">
+    <button [class.selected]="tsadik === currentTsadik" mat-list-item (click)="click(tsadik)">
       <img matListAvatar src="{{tsadik.picturePath}}">
       <h3 matLine>{{tsadik.name}} </h3>
       <p matLine>

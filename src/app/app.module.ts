@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { TsadikimComponent } from './tsadikim/tsadikim.component';
 import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TsadikDetailComponent } from './tsadik-detail/tsadik-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TsadikimComponent
+    TsadikimComponent,
+    TsadikDetailComponent
   ],
   imports: [
     BrowserModule,
